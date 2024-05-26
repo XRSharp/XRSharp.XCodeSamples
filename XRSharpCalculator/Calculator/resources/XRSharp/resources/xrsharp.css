@@ -1,0 +1,82 @@
+﻿/*====================================================================================*\
+*
+* Copyright (c) Userware. This is proprietary code. All rights reserved.
+*
+\*====================================================================================*/
+
+.xr-buttons-container {
+    position: absolute;
+    right: 50%;
+    bottom: 20px;
+    transform: translate(50%);
+    z-index: 999;
+}
+
+.xr-buttons-container.subtle {
+    right: 15px;
+    bottom: 20px;
+    transform: none;
+}
+
+.xr-button {
+    background: none;
+    background-image: none;
+    background-color: white;
+    opacity: 0.8;
+    color: #202020;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Segoe UI", Verdana, "DejaVu Sans", Lucida, "MS Sans Serif", sans-serif;
+    padding: 8px 12px;
+    margin-left: 15px;
+    border-radius: 8px;
+    border-width: 2px;
+    touch-action: manipulation; /* Prevent iOS double tap zoom on the button */
+    cursor: pointer;
+    user-select: none;
+}
+
+.xr-button.subtle {
+    opacity: 0.5;
+    font-size: 16px;
+    font-weight: 700;
+    border-width: 0px;
+}
+
+.xr-button:hover {
+    opacity: 0.6;
+}
+
+.xr-button:active {
+    opacity: 1.0;
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6), inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.xr-button.subtle.resethover {
+    opacity: 0.5;
+}
+
+.xr-modal {
+    color: white;
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+    padding: 20px;
+    z-index: 1000;
+}
+
+.xr-modal-close-button {
+    position: absolute;
+    top: -5px;
+    right: 5px;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.xr-modal-link {
+    color: white;
+}

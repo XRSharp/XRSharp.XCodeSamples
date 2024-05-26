@@ -1,0 +1,4 @@
+framework module XRSharp {
+  header "XRSharp-Swift.h"
+  requires objc
+}
